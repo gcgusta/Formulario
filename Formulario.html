@@ -10,17 +10,41 @@
     <div class="container-formulario">
         <h1>Entre em contato</h1>
         <p class="texto-instrucao">Deixe sua mensagem e entrarei em contato em breve.</p>
+
         <form action="" method="post">
             <div class="form-row">
                 <div class="campo-formulario">
-                    <label for="nome">Digite seu nome:<span class="asterisco">*</span></label>
-                    <input type="text" id="nome" name="nome" placeholder="Fulano" required>
+                    <label for="nome">Digite seu nome completo:<span class="asterisco">*</span></label>
+                    <input type="text" id="nome" name="nome" placeholder="Fulano Ciclano Beltrano" required>
                 </div>
                 <div class="campo-formulario">
                     <label for="email">Digite seu Email:<span class="asterisco">*</span></label>
                     <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
                 </div>
             </div>
+
+            <div class="form-row">
+                <div class="campo-formulario">
+                    <label for="telefone">Telefone:<span class="asterisco">*</span></label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="+1 (99) 99999-9999" required>
+                </div>
+                <div class="campo-formulario">
+                    <label for="idade">Idade:<span class="asterisco">*</span></label>
+                    <input type="number" id="idade" name="idade" min="1" max="100" placeholder="Digite sua idade" required>
+                </div>
+            </div>
+
+            <div class="campo-formulario">
+                <label for="data_cadastro">Data de Cadastro:<span class="asterisco">*</span></label>
+                <input type="date" id="data_cadastro" name="data_cadastro" required>
+            </div>
+
+            <div class="campo-formulario mensagem-campo">
+                <label for="mensagem">Mensagem:<span class="asterisco">*</span></label>
+                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem" required></textarea>
+            </div>
+
+            <!-- Tipo de Contato movido para baixo -->
             <div class="campo-formulario">
                 <label>Tipo de Contato:<span class="asterisco">*</span></label>
                 <div class="radio-group">
@@ -32,27 +56,11 @@
                     <label for="contato_whatsapp">WhatsApp</label>
                 </div>
             </div>
-            <div class="form-row">
-                <div class="campo-formulario">
-                    <label for="telefone">Telefone:<span class="asterisco">*</span></label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="+1 (99) 99999-9999" required>
-                </div>
-                <div class="campo-formulario">
-                    <label for="idade">Idade:<span class="asterisco">*</span></label>
-                    <input type="number" id="idade" name="idade" min="1" max="100" placeholder="Digite sua idade" required>
-                </div>
-            </div>
-            <div class="campo-formulario">
-                <label for="data_cadastro">Data de Cadastro:<span class="asterisco">*</span></label>
-                <input type="date" id="data_cadastro" name="data_cadastro" required>
-            </div>
-            <div class="campo-formulario mensagem-campo">
-                <label for="mensagem">Mensagem:<span class="asterisco">*</span></label>
-                <textarea id="mensagem" name="mensagem" rows="6" placeholder="Digite sua mensagem" required></textarea>
-            </div>
+
             <button type="submit" class="botao-enviar">Enviar</button>
         </form>
     </div>
+
     <script src="a.js"></script>
 </body>
 </html>
