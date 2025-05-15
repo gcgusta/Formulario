@@ -109,3 +109,7 @@ h1 {
 .mensagem-campo {
     margin-bottom: 30px;
 }
+
+input[type="radio"]:checked {
+    accent-color: #b11212; /* Define a cor de destaque (a bolinha interna) */
+}
