@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(to top left, #410b0b 50%, #ffffff 50%);
+    background: linear-gradient(to top left, #410b0b 50%, #ffffff 50%); /* Fundo original */
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -111,5 +111,25 @@ h1 {
 }
 
 input[type="radio"]:checked {
-    accent-color: #b11212; /* Define a cor de destaque (a bolinha interna) */
+    accent-color: #b11212; /* Cor do radio button selecionado */
+}
+
+.mensagem-erro {
+    background-color: #f44336; /* Vermelho para a mensagem de erro */
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    margin-top: 4px;
+    display: none; /* Inicialmente escondido */
+}
+
+.erro + .mensagem-erro {
+    display: block; /* Mostrar a mensagem de erro quando o campo tem a classe 'erro' */
+}
+
+.campo-formulario input.erro,
+.campo-formulario textarea.erro,
+.radio-group.erro {
+    /* Você pode adicionar um estilo visual para indicar erro no grupo de rádio */
 }
